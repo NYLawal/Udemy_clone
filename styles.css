@@ -8,7 +8,7 @@ body {
   max-width: 1500px;
   overflow-x: hidden;
 }
-
+ /* styles for the main body */
 main {
   position: absolute;
   top: 0;
@@ -23,6 +23,7 @@ a {
   font-weight: bold;
 }
 
+/* styles for the upper yellow div */
 .timerdiv {
   background-color: rgb(228, 228, 148);
   text-align: center;
@@ -35,6 +36,16 @@ a {
   font-size: 14px;
 }
 
+.cancel {
+  font-size: 20px;
+  position: absolute;
+  right: 35px;
+  top: 25px;
+  transform: scale(1.2);
+  font-stretch: extra-expanded;
+}
+
+/* styles for the top navigation area */
 .upperdiv {
   display: flex;
   flex-direction: row;
@@ -87,7 +98,7 @@ a {
   margin-left: -18px;
 }
 
-.sidebutton3 .web {
+.web {
   width: 17px;
   height: 17px;
 }
@@ -115,27 +126,44 @@ a {
   font-weight: bold;
 }
 
+/* styles for the cover image area */
 #cover {
   width: 1350px;
   height: 400px;
   background-image: url("images/hero\ cover.jpg");
-  background-position: center;
   margin: 0;
   margin-bottom: 50px;
 }
 
 #cover-content {
   background-color: white;
-  width: 500px;
-  height: 150px;
+  width: 360px;
+  height: 120px;
   box-shadow: 0 4px 2px -3px gray;
   position: absolute;
   top: 250px;
-  left: 50px;
+  left: 80px;
 }
 
+#cover-content h1 {
+  font-family: SuisseWorks, Georgia, Times, times new roman, serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-left: 20px;
+}
+
+#cover-content p {
+  width: 320px;
+  font-size: 14px;
+  margin-top: 5px;
+  line-height: 1.5;
+  padding-left: 20px;
+}
+
+/* styles for the first main section - broad selection of courses */
 #course-selection {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 #course-selection .title {
@@ -283,6 +311,7 @@ a {
   margin-top: 5px;
 }
 
+/* styles for the short section with blue background and three icons */
 #midsection {
   background-color: rgba(248, 249, 250, 0.966);
   height: 90px;
@@ -307,8 +336,9 @@ a {
   filter: brightness(100%);
 }
 
+/* styles for students are viewing section */
 #viewing {
-  margin-bottom: 90px;
+  margin-bottom: 70px;
 }
 
 #viewing .heading,
@@ -331,6 +361,7 @@ a {
   width: 240px;
 }
 
+/* styles for the top categories section */
 #category-items {
   display: grid;
   grid-template-rows: 360px 360px;
@@ -339,7 +370,6 @@ a {
   column-gap: 30px;
   justify-items: start;
   align-items: start;
-
 }
 
 .items-card {
@@ -357,6 +387,7 @@ a {
   margin-left: 30px;
 }
 
+/* styles for the featured topics section*/
 #featured-topics {
   background-color: rgb(240, 243, 247);
   min-height: 500px;
@@ -408,18 +439,19 @@ a {
   margin-top: 20px;
 }
 
+/* styles for become an instructor section */
 #become-instructor {
   margin-bottom: 50px;
 }
 
-.instructor {
+.bigimage-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 50px;
 }
 
-.instructor-details {
+.details {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -427,25 +459,161 @@ a {
   width: 400px;
 }
 
-.instructor-details h1 {
+.caption {
   font-family: SuisseWorks, Georgia, Times, times new roman, serif, apple color emoji, segoe ui emoji, segoe ui symbol;
   font-size: 33px;
   margin-bottom: 0px;
 }
 
-.instructor-details p {
+.side-caption {
   line-height: 1.5;
   font-size: 17px;
 }
 
-.instructor-details .start-teaching {
+.black-button {
   background-color: black;
   color: white;
   padding: 13px;
   font-size: 13.5px;
 }
 
-.instructor img {
-  width: 490px;
-  height: 390px;
+.big-image {
+  width: 470px;
+  height: 380px;
+}
+
+.instructor-details {
+  margin-top: -20px;
+}
+
+/* styles for the trusted by great teams section */
+#trusted {
+  background-color: rgb(240, 243, 247);
+  min-height: 120px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+#trusted .caption {
+  font-size: 25px;
+  padding-top: 25px;
+}
+
+#trusted p {
+  font-size: 15px;
+  margin-bottom: -15px;
+}
+
+#trusted img {
+  width: 120px;
+  height: 120px;
+}
+
+.trusted-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
+}
+
+#trusted .volks {
+  width: 50px;
+  height: 50px;
+}
+
+#trusted .box {
+  width: 65px;
+  height: 65px;
+}
+
+/* styles for udemy business section */
+.business-details {
+  justify-content: flex-start;
+}
+
+.udemy-buz {
+  width: 200px;
+  height: 150px;
+  margin-bottom: -50px;
+}
+
+#udemy-business {
+  margin-bottom: 70px;
+}
+
+.business {
+  gap: 110px;
+}
+
+/* styles for transform through education section */
+.transform {
+  gap: 100px;
+}
+
+.transform-details {
+  width: 420px;
+  padding-bottom: 40px;
+}
+
+#transform-life {
+  margin-bottom: 90px;
+}
+
+/* styles for the footer section */
+#footer {
+  background-color: rgb(30, 30, 31);
+  min-height: 310px;
+}
+
+#footer-details {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 10px;
+  gap: 130px;
+}
+
+.footer-ul li {
+  list-style-type: none;
+  color: white;
+  line-height: 2.3;
+  font-size: 13px;
+}
+
+#language {
+  width: 145px;
+  height: 40px;
+  border: 1.5px solid white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 40px 10px 15px;
+  margin-left: 270px;
+  margin-top: 15px;
+}
+
+#language a {
+  color: white;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.web-white {
+  width: 20px;
+  height: 20px;
+}
+
+#lastdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 50px 30px 36px;
+}
+
+.logowhite {
+  width: 100px;
+}
+
+#lastdiv span {
+  color: white;
+  font-size: 11px;
 }
